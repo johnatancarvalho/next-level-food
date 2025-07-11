@@ -1,13 +1,12 @@
 import Link from "next/link";
 
 import MealsGrid from "@/components/meals/meals-grid";
-
-import { Meal } from "@/common/types";
+import { getMeals } from "@/utils/data/meals";
 
 import css from "./page.module.css";
 
-export default function MealsPage() {
-  const meals: Meal[] = [];
+export default async function MealsPage() {
+  const meals = await getMeals();
   return (
     <>
       <header className={css.header}>

@@ -2,7 +2,7 @@ export interface Meal {
   id: string;
   title: string;
   slug: string;
-  imageSrc: string;
+  image: string;
   summary: string;
   creator: string;
 }

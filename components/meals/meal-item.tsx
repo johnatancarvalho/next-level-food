@@ -1,14 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { Meal } from "@/common/types";
+import { Meal } from "@/types/models";
 
 import css from "./meal-item.module.css";
 
 export default function MealItem({
   title,
   slug,
-  imageSrc,
+  image,
   summary,
   creator,
 }: Meal) {
@@ -16,7 +16,7 @@ export default function MealItem({
     <article className={css.meal}>
       <header>
         <div className={css.image}>
-          <Image src={imageSrc} alt={title} fill />
+          <Image src={image} alt={title} fill />
         </div>
         <div className={css.headerText}>
           <h2>{title}</h2>

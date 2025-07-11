@@ -1,5 +1,6 @@
-import { Meal } from "@/common/types";
 import MealItem from "./meal-item";
+
+import { Meal } from "@/types/models";
 
 import css from "./meals-grid.module.css";
 
