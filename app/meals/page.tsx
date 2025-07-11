@@ -1,23 +1,29 @@
 import Link from "next/link";
-import React from "react";
 
-const Meals = () => {
+import MealsGrid from "@/components/meals/meals-grid";
+
+import { Meal } from "@/common/types";
+
+import css from "./page.module.css";
+
+export default function MealsPage() {
+  const meals: Meal[] = [];
   return (
     <>
-      <h1>Meals</h1>
-      <div className="flex flex-col gap-2">
+      <header className={css.header}>
+        <h1>
+          Delicious meals, created <span className={css.highlight}>by you</span>
+        </h1>
         <p>
-          <Link href="/meals/breakfast">Breakfast</Link>
+          Choose your favorite recipe and cook it yourself. It is easy and fun!
         </p>
-        <p>
-          <Link href="/meals/lunch">Lunch</Link>
+        <p className={css.cta}>
+          <Link href="/meals/share">Share your favorite recipe</Link>
         </p>
-        <p>
-          <Link href="/meals/dinner">Dinner</Link>
-        </p>
-      </div>
+      </header>
+      <main className={css.main}>
+        <MealsGrid meals={meals} />
+      </main>
     </>
   );
-};
-
-export default Meals;
+}
