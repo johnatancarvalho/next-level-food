@@ -7,13 +7,8 @@ export const getMeals = async () => {
   const supabase = await createClient();
 
   const { data: meals, error } = await supabase.from("meals").select();
-  if (error) {
-    // TODO: handle errors
-    console.error("Error fetching meals:", error);
-    return [];
-  }
-  if (!meals) {
-    return [];
+  if (error || !meals) {
+    throw new Error(`Failed to fetch meals: ${error?.message}`);
   }
   return meals as Meal[];
 };
