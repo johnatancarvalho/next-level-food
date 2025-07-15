@@ -1,6 +1,12 @@
 import React from "react";
 
-const MealPage = async ({ params }: { params: { mealSlug: string } }) => {
+interface Props {
+  params: Promise<{
+    mealSlug: string;
+  }>;
+}
+
+const MealPage = async ({ params }: Props) => {
   const { mealSlug } = await params;
   return <h1>Meal: {mealSlug}</h1>;
 };
