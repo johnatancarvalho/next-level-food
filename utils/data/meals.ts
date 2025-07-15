@@ -17,4 +17,3 @@ export const getMeals = async () => {
   }
   return meals as Meal[];
 };
-
