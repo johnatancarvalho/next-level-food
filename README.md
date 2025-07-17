@@ -6,11 +6,12 @@ NextLevel Food is a platform for food lovers to share their favorite recipes wit
 
 [Live demo here!](https://next-level-food-seven.vercel.app/meals)
 
-[TODO: Insert pictures here]
+<img width="1667" height="965" alt="next-level-food-preview" src="https://github.com/user-attachments/assets/907597e1-7534-4303-8bcf-2f4e9ff835ac" />
+
 
 ### Features
 
-- [TODO: complete features list]
+- [TODO: add feature list]
 
 ### Technical Details
 
