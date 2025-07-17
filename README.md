@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NextLevel Food (work in progress)
 
-## Getting Started
+## Project Description
 
-First, run the development server:
+NextLevel Food is a platform for food lovers to share their favorite recipes with the world. Users can join a community and connect with people passionate about delicious meals.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[Live demo here!](https://next-level-food-seven.vercel.app/meals)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[TODO: Insert pictures here]
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [TODO: complete features list]
 
-## Learn More
+### Technical Details
 
-To learn more about Next.js, take a look at the following resources:
+- Fullstack application built with Next.js and Typescript
+- Supabase integration
+- Deployed on Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Setup/Installation Requirements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Install [Node.js](https://nodejs.org/)
+- Download or clone this repo
+- Open terminal and navigate to the root folder
+- Run `npm install`
+- Create a `.env` file and [setup the Supabase environment variables](https://supabase.com/docs/guides/getting-started/quickstarts/nextjs).
+- Run `npm run dev`
 
-## Deploy on Vercel
+## Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![NextJS](https://img.shields.io/badge/-NextJS-05122A?style=flat&logo=nextdotjs)&nbsp;
+![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)&nbsp;
+![JavaScript](https://img.shields.io/badge/-Typescript-05122A?style=flat&logo=typescript)&nbsp;
+![CSS](https://img.shields.io/badge/-Supabase-05122A?style=flat&logo=supabase)&nbsp;
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contact Details
+
+<p align="">
+<a href="mailto:johnatancarvalho06@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Gmail"></a>
+<a href="https://www.linkedin.com/in/johnatan-csouza/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+</p>
