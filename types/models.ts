@@ -4,7 +4,7 @@ export interface Meal {
   slug: string;
   image: string;
   summary: string;
-  creator: string;
   instructions: string;
-  creator_email: string
+  creator: string;
+  creator_email: string; // TODO: create User type
 }
