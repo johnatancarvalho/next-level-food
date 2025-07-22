@@ -60,6 +60,7 @@ export default function ImagePicker({
           name={name}
           onChange={handleImageChange}
           ref={pickerRef}
+          required
         />
         <button type="button" className={css.button} onClick={handlePickClick}>
           Pick an Image
