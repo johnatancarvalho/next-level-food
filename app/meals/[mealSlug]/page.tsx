@@ -13,7 +13,20 @@ interface Props {
   }>;
 }
 
-const MealDetailsPage = async ({ params }: Props) => {
+export async function generateMetadata({ params }: Props) {
+  const { mealSlug } = await params;
+
+  const meal = await getMeal(mealSlug);
+
+  if (meal) {
+    return {
+      title: meal.title,
+      description: meal.summary,
+    };
+  }
+}
+
+export default async function MealDetailsPage({ params }: Props) {
   const { mealSlug } = await params;
 
   const meal = await getMeal(mealSlug);
@@ -49,6 +62,4 @@ const MealDetailsPage = async ({ params }: Props) => {
       </main>
     </>
   );
-};
-
-export default MealDetailsPage;
+}
