@@ -1,23 +1,24 @@
-# NextLevel Food (work in progress)
+# 🍕 NextLevel Food
 
-## Project Description
+
 
 NextLevel Food is a platform for food lovers to share their favorite recipes with the world. Users can join a community and connect with people passionate about delicious meals.
 
-[Live demo here!](https://next-level-food-seven.vercel.app/meals)
+🌐 Live demo available [here](https://next-level-food-seven.vercel.app/meals).
 
 <img width="1667" height="965" alt="next-level-food-preview" src="https://github.com/user-attachments/assets/907597e1-7534-4303-8bcf-2f4e9ff835ac" />
 
 
 ### Features
 
-- [TODO: add feature list]
+- User can share a meal with the community.
+- User can browse the list of meals shared by the community.
 
 ### Technical Details
 
-- Fullstack application built with Next.js and Typescript
-- Supabase integration
-- Deployed on Vercel
+- Fullstack application built with Next.js and Typescript.
+- Integration with Supabase for cloud file storage and database access.
+- Deployed on Vercel.
 
 ## Setup/Installation Requirements
 
@@ -32,10 +33,10 @@ NextLevel Food is a platform for food lovers to share their favorite recipes wit
 
 ![NextJS](https://img.shields.io/badge/-NextJS-05122A?style=flat&logo=nextdotjs)&nbsp;
 ![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)&nbsp;
-![JavaScript](https://img.shields.io/badge/-Typescript-05122A?style=flat&logo=typescript)&nbsp;
-![CSS](https://img.shields.io/badge/-Supabase-05122A?style=flat&logo=supabase)&nbsp;
+![Typescript](https://img.shields.io/badge/-Typescript-05122A?style=flat&logo=typescript)&nbsp;
+![Supabase](https://img.shields.io/badge/-Supabase-05122A?style=flat&logo=supabase)&nbsp;
 
-## Contact Details
+## Contact me
 
 <p align="">
 <a href="mailto:johnatancarvalho06@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Gmail"></a>
