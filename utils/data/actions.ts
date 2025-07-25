@@ -1,6 +1,8 @@
 'use server';
 
 import { redirect } from "next/navigation";
+import { revalidatePath } from "next/cache";
+
 import { saveMeal } from "./meals";
 
 export interface MealFormData {
@@ -21,6 +23,7 @@ export async function shareMeal(formData: FormData) {
       creator: formData.get("name"),
       creator_email: formData.get("email"),
     } as MealFormData);
-    
+
+    revalidatePath("/meals");
     redirect("/meals");
   }
