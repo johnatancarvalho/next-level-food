@@ -4,8 +4,7 @@ import { createClient } from "../supabase/server";
 
 import slugify from "slugify";
 import xss from "xss";
-import { MealFormData } from "./actions";
-import { BUCKET } from "@/types/common";
+import { BUCKET, MealFormData } from "@/types/common";
 import { SupabaseClient } from "@supabase/supabase-js";
 
 /**
@@ -85,8 +84,8 @@ export const saveMeal = async (formData: MealFormData) => {
     instructions: xss(formData.instructions),
     image: imageUrl,
     slug,
-    creator: formData.creator,
-    creator_email: formData.creator_email,
+    creator: formData.name,
+    creator_email: formData.email,
   };
 
   const { error } = await supabase.from("meals").insert(meal);

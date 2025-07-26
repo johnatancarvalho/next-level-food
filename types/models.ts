@@ -5,5 +5,5 @@ export interface Meal {
   summary: string;
   instructions: string;
   creator: string;
-  creator_email: string; // TODO: create User type
+  creator_email: string;
 }

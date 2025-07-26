@@ -1,16 +1,20 @@
 "use client";
 
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import Image from "next/image";
 
 import css from "./image-picker.module.css";
 
 export default function ImagePicker({
+  setImage,
   label,
   name,
+  errors,
 }: {
+  setImage: Dispatch<SetStateAction<File | undefined>>;
   label: string;
   name: string;
+  errors?: string[] | undefined;
 }) {
   const [pickedImage, setPickedImage] = React.useState<string>();
   const pickerRef = React.useRef<HTMLInputElement>(null);
@@ -24,6 +28,7 @@ export default function ImagePicker({
 
     if (!file) {
       setPickedImage(undefined);
+      setImage(undefined);
       return;
     }
 
@@ -34,6 +39,7 @@ export default function ImagePicker({
         return;
       }
       setPickedImage(res);
+      setImage(file);
     };
     fileReader.readAsDataURL(file);
   }
@@ -42,15 +48,22 @@ export default function ImagePicker({
     <div className={css.picker}>
       <label htmlFor={name}>{label}</label>
       <div className={css.controls}>
-        <div className={css.preview}>
-          {!pickedImage && <p>No image picked yet.</p>}
-          {pickedImage && (
-            <Image
-              src={pickedImage}
-              alt="The image selected by the user"
-              fill
-            />
-          )}
+        <div>
+          <div className={css.preview}>
+            {!pickedImage && (
+              <div onClick={!pickedImage ? handlePickClick : undefined}>
+                No image picked yet.
+              </div>
+            )}
+            {pickedImage && (
+              <Image
+                src={pickedImage}
+                alt="The image selected by the user"
+                fill
+              />
+            )}
+          </div>
+          {!!errors?.[0] && <span className={css.error}>{errors[0]}</span>}
         </div>
         <input
           type="file"
