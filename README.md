@@ -18,6 +18,7 @@ NextLevel Food is a platform for food lovers to share their favorite recipes wit
 
 - Fullstack application built with Next.js and Typescript.
 - Integration with Supabase for cloud file storage and database access.
+- Form validation with Zod.
 - Deployed on Vercel.
 
 ## Setup/Installation Requirements
@@ -35,6 +36,7 @@ NextLevel Food is a platform for food lovers to share their favorite recipes wit
 ![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)&nbsp;
 ![Typescript](https://img.shields.io/badge/-Typescript-05122A?style=flat&logo=typescript)&nbsp;
 ![Supabase](https://img.shields.io/badge/-Supabase-05122A?style=flat&logo=supabase)&nbsp;
+![Zod](https://img.shields.io/badge/-Zod-05122A?style=flat&logo=zod&logoColor=5CA9FF)&nbsp;
 
 ## Contact me
 
